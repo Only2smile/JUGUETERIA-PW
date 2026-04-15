@@ -232,3 +232,63 @@ footer {
     margin-top: 40px;
     border-radius: 20px 20px 0 0;
 }
+
+/* ============================= */
+/* RESPONSIVE PARA PANTALLAS PEQUEÑAS */
+/* ============================= */
+@media (max-width: 768px) {
+
+    /* HEADER se ordena en columna */
+    header {
+        flex-direction: column; /* Logo arriba, menú abajo */
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* MENÚ se centra */
+    nav ul {
+        flex-direction: column; /* Botones uno debajo del otro */
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* BOTONES más pequeños */
+    nav ul li a {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    /* CONTENEDOR GERENTE en columna */
+    .contenedor-columnas {
+        flex-direction: column; /* Imagen arriba, texto abajo */
+        text-align: center;
+    }
+
+    /* IMAGEN gerente más pequeña */
+    .img-gerente {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* TEXTO sin línea lateral */
+    .columna-der p {
+        border-left: none; /* Quita línea azul */
+        padding-left: 0;
+    }
+
+    /* LOGIN más compacto */
+    .login-borde-externo {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    /* PRODUCTOS más compactos */
+    .contenedor-galeria {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+
+    /* IMÁGENES más pequeñas */
+    .foto-producto {
+        height: 150px;
+    }
+}

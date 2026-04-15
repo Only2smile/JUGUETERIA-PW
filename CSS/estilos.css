@@ -1,0 +1,250 @@
+/* RESET Y ESTILOS GLOBALES - Más coloridos y suaves */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffdf5; /* Crema muy suave de fondo para calidez */
+    color: #443322; /* Marrón oscuro para legibilidad suave */
+}
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HEADER Y NAVEGACIÓN - Integrado y colorido */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #f0faff; /* Azul cielo pálido de fondo */
+    border-bottom: 3px solid #e0e0e0; /* Borde sutil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo-caja {
+    /* Eliminados los bordes negros */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 80px;
+    height: auto;
+    display: block;
+    /* El logo colorido sobre negro destaca por sí mismo */
+}
+.nombre-empresa {
+    font-weight: bold;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: #cc0099; /* Púrpura vibrante del arcoíris */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00aaff; /* Azul vibrante */
+    font-size: 1.1em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #cc0099; /* Púrpura vibrante en hover */
+    text-decoration: underline;
+}
+
+/* ESTRUCTURAS SIN BORDES GRUESOS, SOLO CAJAS LIMPIAS */
+.caja-borde {
+    /* Eliminados los bordes negros gruesos */
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Bordes redondeados sutiles */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+.imagen-borde {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px; /* Redondear la imagen también */
+}
+
+/* COLUMNAS DEL INDEX (FOTO ESTUDIANTE / DATOS) */
+.contenedor-columnas {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.columna-izq {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    /* Eliminada la caja-borde */
+}
+.img-gerente {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.columna-der {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    margin-bottom: 0;
+    /* Eliminada la caja-borde */
+}
+.columna-der p {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: #443322;
+}
+
+/* LOGIN - Modernizado y Colorido */
+.login-borde-externo {
+    /* Eliminados los bordes negros gruesos */
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+.login-borde-interno {
+    /* Eliminado el borde punteado negro */
+    padding: 40px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.login-borde-interno h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #cc0099; /* Púrpura vibrante del arcoíris */
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.login-borde-interno label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #443322;
+    margin-bottom: 5px;
+}
+.login-borde-interno .control {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 2px solid #b0e0e6; /* Borde suave azul pálido */
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    background-color: #f9f9f9;
+}
+.login-borde-interno .boton {
+    border: none;
+    background-color: #00aaff; /* Azul vibrante */
+    color: #ffffff;
+    border-radius: 20px; /* Bordes más redondeados */
+    padding: 12px 40px;
+    font-weight: bold;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+}
+.login-borde-interno .boton:hover {
+    background-color: #0099ee; /* Azul más oscuro en hover */
+}
+
+/* GALERÍA - Cajas Limpias y Coloridas */
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.caja-producto {
+    background: #ffffff;
+    padding: 20px;
+    border: none; /* Eliminados los bordes negros gruesos */
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+.caja-producto:hover {
+    transform: translateY(-5px); /* Pequeña animación en hover */
+}
+.foto-producto {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.caja-producto h2 {
+    color: #00aaff; /* Azul vibrante */
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+.precio {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ff9900; /* Naranja vibrante para el precio */
+    margin-bottom: 15px;
+}
+.cantidad {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #b0e0e6;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* FOOTER - Integrado y Suave */
+footer {
+    /* Eliminados los bordes negros gruesos */
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    background-color: #f0faff; /* Azul cielo pálido */
+    color: #443322;
+    font-size: 1.2em;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para el hipervínculo del logo */
+.logo-link {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit;        /* Mantiene el color original del texto */
+    display: flex;
+    align-items: center;
+}
+
+.logo-link:hover {
+    opacity: 0.8;          /* Efecto visual suave al pasar el mouse */
+}
